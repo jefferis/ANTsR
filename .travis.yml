@@ -61,7 +61,7 @@ script:
 
 after_success:
 - Rscript -e 'devtools::install()'
-- Rscript -e 'library(covr);coveralls()'
+- Rscript -e 'library(covr);coveralls(path='/usr/local/lib/R/site-library/ANTsR')'
 
 after_failure:
 - ./travis-tool.sh dump_logs
