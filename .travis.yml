@@ -25,9 +25,9 @@ install:
     -d $HOME/pandoc
 - chmod +x $HOME/pandoc/pandoc
 - export PATH=$PATH:$HOME/pandoc/
-# - pandoc --version
+- pandoc --version
 - ./travis-tool.sh bootstrap
-- ./travis-tool.sh install_github jimhester/covr
+- ./travis-tool.sh github_package jimhester/covr
 - ./travis-tool.sh r_install BGLR
 - ./travis-tool.sh r_binary_install caret
 - ./travis-tool.sh r_binary_install cluster
@@ -60,7 +60,7 @@ script:
 # - R CMD  check ANTsR_1.0.tar.gz --no-install --as-cran
 
 after_success:
- - Rscript -e 'devtools::install()'
+- Rscript -e 'devtools::install()'
 - Rscript -e 'library(covr);coveralls()'
 
 after_failure:
