@@ -44,3 +44,4 @@ src/ANTsR/ANTsR-build-dev/
 src/ANTsR/stamp/
 src/ANTsR/tmp/
 inst/doc
+.Rproj.user
