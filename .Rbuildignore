@@ -7,3 +7,5 @@ src/ANTS/ANTS-build/ITKv4/.git
 src/ANTS/ANTS-build/ITKv4/Modules/Remote/MGHIO/.git
 src/ANTS/ANTS-src/.git
 .gitignore
+^.*\.Rproj$
+^\.Rproj\.user$
